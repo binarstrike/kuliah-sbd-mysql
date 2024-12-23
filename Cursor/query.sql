@@ -21,6 +21,7 @@ BEGIN
     SELECT NamaPasien AS 'Daftar Pasien yang berdomisili di Cilacap'
     FROM `tbPasien`
     WHERE `Alamat` = 'Cilacap';
+    -- SELECT nama_pasien AS 'Daftar Pasien yang berdomisili di Cilacap';
     
     IF exit_loop THEN
       CLOSE cursor1;
@@ -73,7 +74,7 @@ BEGIN
     SELECT Alamat,COUNT(*) FROM `tbPasien` GROUP BY `Alamat`;
 
   OPEN cur_jumlah_pasien;
-  FETCH cur_jumlah_pasien INTO alamat_pasien,pasien_count;
+  FETCH cur_jumlah_pasien INTO alamat_pasien, pasien_count;
 
   SELECT Alamat,COUNT(*) AS 'jumlah pasien' FROM `tbPasien` GROUP BY `Alamat`;
   CLOSE cur_jumlah_pasien;
