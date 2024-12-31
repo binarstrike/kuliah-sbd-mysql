@@ -1,7 +1,7 @@
 {
   "editor.fontFamily": "ComicShannsMono Nerd Font",
   "editor.fontLigatures": true,
-  "editor.fontSize": 17,
+  "editor.fontSize": 16,
   "editor.fontWeight": "900",
   "[sql]": {
     "editor.insertSpaces": true,
@@ -12,4 +12,13 @@
       "source.organizeImports": "explicit"
     }
   },
+  "[php]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "files.eol": "\n",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  }
 }
