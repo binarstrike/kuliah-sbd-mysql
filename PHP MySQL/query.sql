@@ -34,3 +34,12 @@ BEGIN
   END REPEAT;
   SELECT hasil;
 END //
+
+CREATE TABLE tbUser (
+  IdUser SERIAL,
+  username VARCHAR(128),
+  password VARCHAR(64)
+)
+
+INSERT INTO tbUser (username,password) VALUES ("binar128","binar128");
+
